@@ -1,6 +1,6 @@
 # ![Fukol Grid System](logo.png)
 
-**Fukol&trade;** is a lightweight, breakpoint free, completely responsive, element query driven\*, progressive enhancement based grid framework. It exists in this `README.md` file, in the annotated code example under **The CSS** (below). Just edit the lines marked 'edit me!' to your requirements and write an HTML structure like the one illustrated in **The HTML** (also below).
+**Fukol&trade;** is a lightweight, breakpoint free, completely responsive, element query driven\*, progressive enhancement based grid framework. It exists in this `README.md` file, in the annotated code example under the section titled **The CSS** (below). Just edit the lines marked 'edit me!' to your requirements and write an HTML structure like the one illustrated in the section titled **The HTML** (also below).
 
 (\* Not really, but kind of. See **3**, below.)
 
