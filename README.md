@@ -49,6 +49,30 @@
 </div>
 ```
 
-### RTL Grids
+## Items with different widths
+
+Sometimes you want certain items to be narrower or wider. You can target these using `:nth-child`. For example, you may want to make the first item take up the full width. In which case:
+
+```css
+.fukorl-grid > *:nth-child(1) {
+  flex-basis: 100%;
+}
+```
+
+Or maybe you want the fith item to always be approximately twice the size of a regular item (where space permits). If the regular `flex-basis` is `10em`, then&hellip;
+
+```css
+.fukorl-grid > *:nth-child(5) {
+  flex-basis: 20em;
+}
+```
+
+Don't worry, flexbox will make sure there aren't any gaps.
+
+## RTL Grids
 
 Flexbox supports `rtl` already. Just add `dir="rtl"` to the `.fukorl-grid` element and the flex direction will automatically be reversed.
+
+## That's it
+
+That's it.
