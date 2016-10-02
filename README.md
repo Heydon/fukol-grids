@@ -1,6 +1,6 @@
 # ![Fukol Grid System](logo.png)
 
-**Fukol&trade;** is a lightweight, breakpoint free, completely responsive, element query driven\*, progressive enhancement based grid framework. It exists in this `README` file, in the annotated code example under **The CSS** (below). Just edit the lines marked 'edit me!' to your requirements and apply to an HTML structure like the one illustrated in **The HTML** (below).
+**Fukol&trade;** is a lightweight, breakpoint free, completely responsive, element query driven\*, progressive enhancement based grid framework. It exists in this `README.md` file, in the annotated code example under **The CSS** (below). Just edit the lines marked 'edit me!' to your requirements and write an HTML structure like the one illustrated in **The HTML** (also below).
 
 (\* Not really, but kind of. See **3**, below.)
 
@@ -72,6 +72,13 @@ Don't worry, flexbox will make sure there aren't any gaps.
 ## RTL Grids
 
 Flexbox supports `rtl` already. Just add `dir="rtl"` to the `.fukol-grid` element and the flex direction will automatically be reversed.
+
+## FAQs
+
+1. *How do I install Fukol&times;? Is it on bower/npm?* You install it by copy/pasting it from this `README.md` file. See the **The CSS** section above.
+2. *Why are there a load of old dicks in the Fukol&times; logo? Are you some sort of misogynist?* There are a load of old dicks in Fukol&times;'s logo because grid systems are a load of old dicks. Fuck the patriarchy.
+3. *Is Fukol&times; the answer to all my grid system hopes and dreams?* No. Fukol&times; is just a servicable solution, written with very little code.
+4. *Is there a Sass version?* Yes: inside your head.
 
 ## That's it
 
