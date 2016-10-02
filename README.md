@@ -32,7 +32,7 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 4. This declaration means that items will 'flex' to use up the available space. If an item wraps onto a new row, it will take up 100% of that row's space. If you add another item to that new row and the overall width is more than twice your `flex-basis`, the row will be divided into two. If not, another new row is created.
 5. This is for gutters. A `0.5em` margin here means gutters of `1em` (the margins double up).
 6. This should always be a negative version of **5**. It compensates for the margins created by the items. It makes sure the outside of the `.fukol-grid` container remains flush horizontally and no additional margin is added to the vertical flow.
-7. Having used negative margins (**6**) on `.fukol-grid`, a container element is provided for the application of positive margins where desired. The `overflow: hidden` declaration suppresses horizontal scrollbars caused by negayive margins in some browsers and circumstances.
+7. Having used negative margins (**6**) on `.fukol-grid`, a container element is provided for the application of positive margins where desired. The `overflow: hidden` declaration suppresses horizontal scrollbars caused by negative margins in some browsers and circumstances.
 
 ## The HTML
 
