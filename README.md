@@ -19,7 +19,7 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
   margin: -0.5em; /* 6 (edit me!) */
 }
 
-.fukol > * {
+.fukol-grid > * {
   flex-basis: 10em; /* 3 (edit me!) */
   flex-grow: 1; /* 4 */
   margin: 0.5em; /* 5 (edit me!) */
