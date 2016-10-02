@@ -1,0 +1,20 @@
+{
+  "name": "fukol-grids",
+  "version: "0.0.1",
+  "dependencies": {
+    "react": "*",
+    "angular": "*",
+    "lodash": "*",
+    "jquery": "1",
+    "jquery": "2",
+    "jquery": "3",
+    "jquery": "4"
+  },
+  "devDependencies": {
+    "webpack": "*",
+    "browserify": "*",
+    "jspm": "*",
+    "babel": "*"
+  }
+}
+  
