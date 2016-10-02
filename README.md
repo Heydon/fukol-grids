@@ -48,3 +48,7 @@
   </ul>
 </div>
 ```
+
+### RTL Grids
+
+Flexbox supports `rtl` already. Just add `dir="rtl"` to the `.fuckol-grid` element and the flex direction will automatically be reversed.
