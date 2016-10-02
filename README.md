@@ -28,7 +28,7 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 
 1. **Fukol&trade;** is a Flexbox based grid system. Even Opera Mini supports Flexbox. Older user agents that don't support Flexbox ignore the `display: flex` declaration, degrading to a single column layout. No harm done.
 2. This line determines how items are handled. The important part is `wrap` which means items will start a new row if there's not enough room on the current one.
-3. This is the "element query" part. Instead of setting an arbitrary number of columns and using breakpoints, we decide how wide we would like each item to be. How many items you get per row depends on the width of the container.
+3. This is the 'element query' part. Instead of setting an arbitrary number of columns and using breakpoints, we decide how wide we would like each item to be. How many items you get per row depends on the width of the container.
 4. This declaration means that items will 'flex' to use up the available space. If an item wraps onto a new row, it will take up 100% of that row's space. If you add another item to that new row and the overall width is more than twice your `flex-basis`, the row will be divided into two. If not, another new row is created.
 5. This is for gutters. A `0.5em` margin here means gutters of `1em` (the margins double up).
 6. This should always be a negative version of **5**. It compensates for the margins created by the items. It makes sure the outside of the `.fukol-grid` container remains flush horizontally and no additional margin is added to the vertical flow.
