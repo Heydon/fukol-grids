@@ -67,7 +67,7 @@ Sometimes you want certain items to be narrower or wider. You can target these u
 }
 ```
 
-Or maybe you want the fith item to always be approximately twice the size of a regular item (where space permits). If the regular `flex-basis` is `10em`, then&hellip;
+Or maybe you want the fifth item to always be approximately twice the size of a regular item (where space permits). If the regular `flex-basis` is `10em`, then&hellip;
 
 ```css
 .fukol-grid > *:nth-child(5) {
