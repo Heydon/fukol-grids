@@ -2,7 +2,7 @@
 
 **Fukol&trade;** is a lightweight, breakpoint free, completely responsive, element query driven\*, progressive enhancement based CSS grid framework. It exists in this `README.md` file, in the section titled **The CSS** (below). It is **264 bytes** in size unminified and, when you minify it, it fits in a tweet:
 
-![Fukol minified and in a tweet](tweet.png)
+<img src="tweet.png" alt="Fukol minified and in a tweet" width="300" />
 
 Just edit the lines marked 'edit me!' to your requirements and write an HTML structure like the one illustrated in the section titled **The HTML** (also below).
 
