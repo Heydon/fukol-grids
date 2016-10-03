@@ -51,6 +51,10 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 </div>
 ```
 
+## Demo
+
+![Grid items as boxes, collapsing into fewer columns at smaller viewports automatically](fukol-demo.gif)
+
 ## Items with different widths
 
 Sometimes you want certain items to be narrower or wider. You can target these using `:nth-child`. For example, you may want to make the first item take up the full width. In which case:
