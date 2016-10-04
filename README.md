@@ -90,9 +90,10 @@ Flexbox supports `rtl` already. Just add `dir="rtl"` to the `.fukol-grid` elemen
 ## FAQs
 
 1. *How do I install Fukol&trade;? Is it on bower/npm?* You install it by copy/pasting it from this `README.md` file. See the **The CSS** section above.
-2. *Is Fukol&trade; the answer to all my grid system hopes and dreams?* No. Fukol&trade; is just a servicable solution, written with very little code.
-3. *Why are there a load of old dicks in the Fukol&trade; logo? Are you some sort of misogynist?* No, fuck the patriarchy. There are a load of old dicks in Fukol&trade;'s logo because grid systems are a load of old dicks.
-4. *Is there a Sass version?* Yes: inside your head.
+2. *How do I pronounce Fukol?* Fukol is pronounced "the square root of fuck all".
+3. *Is Fukol&trade; the answer to all my grid system hopes and dreams?* No. Fukol&trade; is just a servicable solution, written with very little code.
+4. *Why are there a load of old dicks in the Fukol&trade; logo? Are you some sort of misogynist?* No, fuck the patriarchy. There are a load of old dicks in Fukol&trade;'s logo because grid systems are a load of old dicks.
+5. *Is there a Sass version?* Yes: inside your head.
 
 ## That's it
 
