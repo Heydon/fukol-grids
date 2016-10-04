@@ -1,6 +1,6 @@
 # ![Fukol Grid System](logo.png)
 
-**Fukol&trade;** is a lightweight, breakpoint free, completely responsive, element query driven\*, progressive enhancement based CSS grid framework. It exists in this `README.md` file, in the section titled **The CSS** (below). It is **264 bytes** in size unminified and, when you minify it, it fits in a tweet:
+**Fukol&trade;** is a lightweight, breakpoint free, completely responsive, element query driven\*, progressive enhancement based CSS grid framework. It exists in this `README.md` file, in the section titled **The CSS** (below). It is **264 bytes** _unminified_ and fits in a tweet when minified:
 
 <img src="tweet.png" alt="Fukol minified and in a tweet" width="450" />
 
