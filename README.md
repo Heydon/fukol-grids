@@ -53,9 +53,15 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 </div>
 ```
 
-## Demo
+## Demos
+
+### Here's a gif
 
 ![Grid items as boxes, collapsing into fewer columns at smaller viewports automatically](fukol-demo.gif)
+
+### Play around on CodePen
+
+[codepen.io/heydon/pen/dpzwVd](http://codepen.io/heydon/pen/dpzwVd)
 
 ## Items with different widths
 
