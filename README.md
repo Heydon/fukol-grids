@@ -42,7 +42,7 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 
 1. **Fukol&trade;** is a Flexbox based grid system. Even Opera Mini supports Flexbox. Older user agents that don't support Flexbox ignore the `display: flex` declaration, degrading to a single column layout. No harm done.
 2. This line determines how items are handled. The `wrap` value means items will start a new row if there's not enough room on the current one.
-3. This is the 'element query' part. Instead of setting an arbitrary number of columns and using breakpoints, we decide roughly how wide we want the item to be (`10em` in the example — the flex basis) and make sure items can grow to use the available space (`1`) but not shrink (`0`). So only change the `10em` value and leave `1 0` as it is.
+3. This is the 'element query' part. Instead of setting an arbitrary number of columns and using breakpoints, we decide roughly how wide we want the item to be (`5em` in the example — the flex basis) and make sure items can grow to use the available space (`1`) but not shrink (`0`). So only change the `5em` value and leave `1 0` as it is.
 4. This is for gutters. A `0.5em` margin here means gutters of `1em` (the margins double up).
 5. This should always be a negative version of **5**. It compensates for the margins created by the items. It makes sure the outside of the `.fukol-grid` container remains flush horizontally and no additional margin is added to the vertical flow.
 7. The `class="fukol"` container in the HTML snippet enables you to add positive margins around the grid — not possible with just `.fukol-grid` because this uses negative margins (see **6**). It also suppresses horizontal scrolling issues which occur under certain circumstances.
@@ -67,11 +67,11 @@ Sometimes you want certain items to be narrower or wider. You can target these u
 }
 ```
 
-Or maybe you want the fifth item to always be approximately twice the size of a regular item (where space permits). If the regular `flex-basis` is `10em`, then&hellip;
+Or maybe you want the fifth item to always be approximately twice the size of a regular item (where space permits). If the regular `flex-basis` is `5em`, then&hellip;
 
 ```css
 .fukol-grid > *:nth-child(5) {
-  flex-basis: 20em;
+  flex-basis: 10em;
 }
 ```
 
