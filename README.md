@@ -26,7 +26,7 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 ## The HTML
 
 ```html
-<div class="fukol"> <!-- 7 -->
+<div class="fukol"> <!-- 6 -->
   <ul class="fukol-grid">
     <li><!-- grid cell/item/child/whatever --></li>
     <li><!-- grid cell/item/child/whatever --></li>
