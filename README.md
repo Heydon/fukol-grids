@@ -1,6 +1,6 @@
 # ![Fukol Grid System](logo.png)
 
-**Fukol&trade;** is a lightweight, breakpoint free, completely responsive, element query driven\*, progressive enhancement based CSS grid framework. It exists in this `README.md` file, in the section titled **The CSS** (below). It is **264 bytes** _unminified_ and fits in a tweet when minified:
+**Fukol&trade;** is a lightweight, breakpoint free, completely responsive, element query driven\*, progressive enhancement based CSS grid framework. It exists in this `README.md` file, in the section titled **The CSS** (below). It is **229 bytes** _unminified_ and fits comfortably inside a tweet when minified:
 
 <img src="tweet.png" alt="Fukol minified and in a tweet" width="450" />
 
@@ -11,10 +11,6 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 ## The CSS
 
 ```css
-.fukol {
-  overflow: hidden; /* 7 */
-}
-
 .fukol-grid {
   display: flex; /* 1 */
   flex-flow: row wrap; /* 2 */
@@ -28,18 +24,10 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 }
 ```
 
-1. **Fukol&trade;** is a Flexbox based grid system. Even Opera Mini supports Flexbox. Older user agents that don't support Flexbox ignore the `display: flex` declaration, degrading to a single column layout. No harm done.
-2. This line determines how items are handled. The important part is `wrap` which means items will start a new row if there's not enough room on the current one.
-3. This is the 'element query' part. Instead of setting an arbitrary number of columns and using breakpoints, we decide how wide we would like each item to be. How many items you get per row depends on the width of the container.
-4. This declaration means that items will 'flex' to use up the available space. If an item wraps onto a new row, it will take up 100% of that row's space. If you add another item to that new row and the overall width is more than twice your `flex-basis`, the row will be divided into two. If not, another new row is created.
-5. This is for gutters. A `0.5em` margin here means gutters of `1em` (the margins double up).
-6. This should always be a negative version of **5**. It compensates for the margins created by the items. It makes sure the outside of the `.fukol-grid` container remains flush horizontally and no additional margin is added to the vertical flow.
-7. Having used negative margins (**6**) on `.fukol-grid`, a container element is provided for the application of positive margins where desired. The `overflow: hidden` declaration suppresses horizontal scrollbars caused by negative margins in some browsers and circumstances.
-
 ## The HTML
 
 ```html
-<div class="fukol">
+<div class="fukol"> <!-- 7 -->
   <ul class="fukol-grid">
     <li><!-- grid cell/item/child/whatever --></li>
     <li><!-- grid cell/item/child/whatever --></li>
@@ -52,6 +40,14 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
   </ul>
 </div>
 ```
+
+1. **Fukol&trade;** is a Flexbox based grid system. Even Opera Mini supports Flexbox. Older user agents that don't support Flexbox ignore the `display: flex` declaration, degrading to a single column layout. No harm done.
+2. This line determines how items are handled. The important part is `wrap` which means items will start a new row if there's not enough room on the current one.
+3. This is the 'element query' part. Instead of setting an arbitrary number of columns and using breakpoints, we decide how wide we would like each item to be. How many items you get per row depends on the width of the container.
+4. This declaration means that items will 'flex' to use up the available space. If an item wraps onto a new row, it will take up 100% of that row's space. If you add another item to that new row and the overall width is more than twice your `flex-basis`, the row will be divided into two. If not, another new row is created.
+5. This is for gutters. A `0.5em` margin here means gutters of `1em` (the margins double up).
+6. This should always be a negative version of **5**. It compensates for the margins created by the items. It makes sure the outside of the `.fukol-grid` container remains flush horizontally and no additional margin is added to the vertical flow.
+7. The `class="fukol"` container in the HTML snippet enables you to add positive margins around the grid — not possible with just `.fukol-grid` because this uses negative margins (see **6**). It also suppresses horizontal scrolling issues which occur under certain circumstances.
 
 ## Demos
 
