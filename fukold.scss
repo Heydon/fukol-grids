@@ -1,0 +1,29 @@
+/* Fukold SASS
+   ------ ----
+
+   Based on the awesome Fukol framework by @heydonworks.
+   Requires a SASS pre-processor (like node-sass) to turn
+   it back into dull CSS.
+
+   See the awesome w3schools for help on how flex works:
+
+   http://www.w3schools.com/cssref/css3_pr_flex.asp
+*/
+
+$GRID_MARGIN: -0.5em;
+$FLEX_GROW: 1;
+$FLEX_SHRINK: 0;
+$FLEX_LENGTH: 5em;
+$FLEX_WRAP: wrap;
+$CELL_MARGIN: 0.5em;
+
+.fukold-grid {
+    display: flex;
+    flex-wrap: $FLEX_WRAP;
+    margin: $GRID_MARGIN;
+}
+
+.fukold-grid > * {
+    flex: $FLEX_GROW $FLEX_SHRINK $FLEX_LENGTH;
+    margin: $CELL_MARGIN;
+}
