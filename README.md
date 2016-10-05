@@ -59,15 +59,7 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 
 ## Items with different widths
 
-Sometimes you want certain items to be narrower or wider. You can target these using `:nth-child`. For example, you may want to make the first item take up the full width. In which case:
-
-```css
-.fukol-grid > *:nth-child(1) {
-  flex-basis: 100%;
-}
-```
-
-Or maybe you want the fifth item to always be approximately twice the size of a regular item (where space permits). If the regular `flex-basis` is `5em`, then&hellip;
+Sometimes you want certain items to be narrower or wider. Maybe you want the fifth item to always be approximately twice the size of a regular item (where space permits). If the regular `flex-basis` is `5em`, then&hellip;
 
 ```css
 .fukol-grid > *:nth-child(5) {
@@ -76,6 +68,16 @@ Or maybe you want the fifth item to always be approximately twice the size of a 
 ```
 
 Don't worry, flexbox will make sure there aren't any gaps.
+
+### Percentage widths
+
+You can choose a percentage based width for individual items, but remember to adjust for the gutter margin with `calc`. For example, to make the first item 100% in width use:
+
+```css
+.fukol-grid > *:first-child {
+  flex-basis: calc(100% - 1em);
+}
+```
 
 ## RTL Grids
 
