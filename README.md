@@ -75,11 +75,9 @@ You can choose a percentage based width for individual items, but remember to ad
 
 ```css
 .fukol-grid > *:first-child {
-  min-width: calc(50% - 1em);
+  flex-basis: calc(50% - 1em);
 }
 ```
-
-Note the use of `min-width`. This means `flex-basis` is still respected and the item will grow where needed.
 
 ## RTL Grids
 
