@@ -93,7 +93,7 @@ You can choose a percentage based width for individual items, but remember to ad
 
 ## RTL Grids
 
-Flexbox supports `rtl` already. Just add `the class c-fukol__grid--rtl` to the `.c-fukol__grid` element and the flex direction will automatically be reversed.
+Flexbox supports `rtl` already. Just add the class `.c-fukol__grid--rtl` to the `.c-fukol__grid` element and the flex direction will automatically be reversed.
 
 ## FAQs
 
