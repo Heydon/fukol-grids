@@ -11,31 +11,43 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 ## The CSS
 
 ```css
-.fukol-grid {
+.c-fukol__grid {
   display: flex; /* 1 */
   flex-wrap: wrap; /* 2 */
   margin: -0.5em; /* 5 (edit me!) */
 }
 
-.fukol-grid > * {
+.o-fukol__cell--rtl {
+  direction: rtl;
+}
+
+.o-fukol__cell {
   flex: 1 0 5em; /* 3 (edit me!) */
   margin: 0.5em; /* 4 (edit me!) */
+}
+
+.o-fukol__cell--full {
+  flex-basis: calc(100% - 1em);
+}
+
+.o-fukol__cell--double {
+  flex-basis: 5em;
 }
 ```
 
 ## The HTML
 
 ```html
-<div class="fukol"> <!-- 6 -->
-  <ul class="fukol-grid">
-    <li><!-- grid cell/item/child/whatever --></li>
-    <li><!-- grid cell/item/child/whatever --></li>
-    <li><!-- grid cell/item/child/whatever --></li>
-    <li><!-- grid cell/item/child/whatever --></li>
-    <li><!-- grid cell/item/child/whatever --></li>
-    <li><!-- grid cell/item/child/whatever --></li>
-    <li><!-- grid cell/item/child/whatever --></li>
-    <li><!-- grid cell/item/child/whatever --></li>
+<div class="c-fukol"> <!-- 6 -->
+  <ul class="o-fukol__grid">
+    <li class="o-fukol__cell"><!-- grid cell/item/child/whatever --></li>
+    <li class="o-fukol__cell"><!-- grid cell/item/child/whatever --></li>
+    <li class="o-fukol__cell"><!-- grid cell/item/child/whatever --></li>
+    <li class="o-fukol__cell"><!-- grid cell/item/child/whatever --></li>
+    <li class="o-fukol__cell"><!-- grid cell/item/child/whatever --></li>
+    <li class="o-fukol__cell"><!-- grid cell/item/child/whatever --></li>
+    <li class="o-fukol__cell"><!-- grid cell/item/child/whatever --></li>
+    <li class="o-fukol__cell"><!-- grid cell/item/child/whatever --></li>
   </ul>
 </div>
 ```
@@ -44,8 +56,8 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 2. This line determines how items are handled. The `wrap` value means items will start a new row if there's not enough room on the current one.
 3. This is the 'element query' part. Instead of setting an arbitrary number of columns and using breakpoints, we decide roughly how wide we want the item to be (`5em` in the example — the flex basis) and make sure items can grow to use the available space (`1`) but not shrink (`0`). So only change the `5em` value and leave `1 0` as it is.
 4. This is for gutters. A `0.5em` margin here means gutters of `1em` (the margins double up).
-5. This should always be a negative version of **5**. It compensates for the margins created by the items. It makes sure the outside of the `.fukol-grid` container remains flush horizontally and no additional margin is added to the vertical flow.
-7. The `class="fukol"` container in the HTML snippet enables you to add positive margins around the grid — not possible with just `.fukol-grid` because this uses negative margins (see **6**). It also suppresses horizontal scrolling issues which occur under certain circumstances.
+5. This should always be a negative version of **5**. It compensates for the margins created by the items. It makes sure the outside of the `.c-fukol__grid` container remains flush horizontally and no additional margin is added to the vertical flow.
+7. The `class="o-fukol"` container in the HTML snippet enables you to add positive margins around the grid — not possible with just `.o-fukol__grid` because this uses negative margins (see **6**). It also suppresses horizontal scrolling issues which occur under certain circumstances.
 
 ## Demos
 
@@ -55,14 +67,14 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 
 ### Play around on CodePen
 
-[codepen.io/heydon/pen/dpzwVd](http://codepen.io/heydon/pen/dpzwVd)
+[http://codepen.io/petervangrieken/pen/ALVxqY](http://codepen.io/petervangrieken/pen/ALVxqY)
 
 ## Items with different widths
 
 Sometimes you want certain items to be narrower or wider. Maybe you want the fifth item to always be approximately twice the size of a regular item (where space permits). If the regular `flex-basis` is `5em`, then&hellip;
 
 ```css
-.fukol-grid > *:nth-child(5) {
+.c-fukol__cell--double {
   flex-basis: 10em;
 }
 ```
@@ -74,14 +86,14 @@ Don't worry, flexbox will make sure there aren't any gaps.
 You can choose a percentage based width for individual items, but remember to adjust for the gutter margin with `calc`. For example, to make the first item 100% in width use:
 
 ```css
-.fukol-grid > *:first-child {
+.o-fukol__cell--full {
   flex-basis: calc(100% - 1em);
 }
 ```
 
 ## RTL Grids
 
-Flexbox supports `rtl` already. Just add `dir="rtl"` to the `.fukol-grid` element and the flex direction will automatically be reversed.
+Flexbox supports `rtl` already. Just add the class `.c-fukol__grid--rtl` to the `.c-fukol__grid` element and the flex direction will automatically be reversed.
 
 ## FAQs
 
