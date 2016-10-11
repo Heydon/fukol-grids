@@ -40,6 +40,8 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 </div>
 ```
 
+## Notes
+
 1. **Fukol&trade;** is a Flexbox based grid system. Even Opera Mini supports Flexbox. Older user agents that don't support Flexbox ignore the `display: flex` declaration, degrading to a single column layout. No harm done.
 2. This line determines how items are handled. The `wrap` value means items will start a new row if there's not enough room on the current one.
 3. This is the 'element query' part. Instead of setting an arbitrary number of columns and using breakpoints, we decide roughly how wide we want the item to be (`5em` in the example — the flex basis) and make sure items can grow to use the available space (`1`) but not shrink (`0`). So only change the `5em` value and leave `1 0` as it is.
