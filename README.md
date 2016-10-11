@@ -6,7 +6,7 @@
 
 Just edit the lines marked 'edit me!' to your requirements and write an HTML structure like the one illustrated in the section titled **The HTML** (also below).
 
-(\* Not really, but kind of. See **3**, below.)
+(\* Not really, but kind of. See **3** under **Notes**, below.)
 
 ## The CSS
 
@@ -71,7 +71,7 @@ Don't worry, flexbox will make sure there aren't any gaps.
 
 ### Percentage widths
 
-You can choose a percentage based width for individual items, but remember to adjust for the gutter margin with `calc`. For example, to make the first item 100% in width use:
+You can choose a percentage based width for individual items, but remember to adjust for the gutter margin with by subtracting it using `calc`. For example, to make the first item 100% in width when the gutter width is `1em`, use:
 
 ```css
 .fukol-grid > *:first-child {
