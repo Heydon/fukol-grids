@@ -81,6 +81,18 @@ You can choose a percentage based width for individual items, but remember to ad
 }
 ```
 
+**Warning:** Internet Explorer [does not respect `box-sizing`](https://github.com/philipwalton/flexbugs/issues/3#issuecomment-69036362) on `flex-basis` items. In which case, if you use percentage widths, you cannot pad the flex item directly. You will need to insert child nodes inside flex items and pad them instead.
+
+```html
+<div class="fukol"> <!-- 6 -->
+  <ul class="fukol-grid">
+    <li>
+      <div><!-- pad this --></div>
+    </li>
+  </ul>
+</div>
+```
+
 ## RTL Grids
 
 Flexbox supports `rtl` already. Just add `dir="rtl"` to the `.fukol-grid` element and the flex direction will automatically be reversed.
