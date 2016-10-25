@@ -1,0 +1,26 @@
+{
+  "name": "fukol-grids",
+  "homepage": "https://github.com/Heydon/fukol-grids",
+  "authors": [
+    "Heydon Pickering <heydon@heydonworks.com>"
+  ],
+  "description": "A tiny, automatic, breakpoint free, 'element query' based grid system.",
+  "main": "fukol.css",
+  "keywords": [
+    "flexbox",
+    "css",
+    "minimal"
+  ],
+  "license": "see LICENSE.txt",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "fukol-demo.gif",
+    "logo.png",
+    "README.md",
+    "tweet.png"
+  ]
+}
