@@ -73,7 +73,7 @@ Don't worry, flexbox will make sure there aren't any gaps.
 
 ### Percentage widths
 
-You can choose a percentage based width for individual items, but remember to adjust for the gutter margin with by subtracting it using `calc`. For example, to make the first item 100% in width when the gutter width is `1em`, use:
+You can choose a percentage based width for individual items, but remember to adjust for the gutter margin width by subtracting it using `calc`. For example, to make the first item 100% in width when the gutter width is `1em`, use:
 
 ```css
 .fukol-grid > *:first-child {
