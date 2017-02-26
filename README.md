@@ -11,6 +11,10 @@ Just edit the lines marked 'edit me!' to your requirements and write an HTML str
 ## The CSS
 
 ```css
+body {
+  font-size: 1.5vw;
+}
+
 .fukol-grid {
   display: flex; /* 1 */
   flex-wrap: wrap; /* 2 */
